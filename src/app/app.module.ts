@@ -10,10 +10,11 @@ import { AppHeader } from './header/header.component';
 import { DependencyComponent } from './dependency/dependency.component';
 import { DependencyInterface } from './dependency/dependency.interface';
 import { DependencyService } from './dependency/dependency.service';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent, AppHeader, DependencyComponent
+    AppComponent, AppHeader, DependencyComponent, FooterComponent
   ],
   imports: [
     BrowserModule,
