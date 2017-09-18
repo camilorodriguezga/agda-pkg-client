@@ -1,5 +1,6 @@
 import { Component, OnInit, Injectable, Inject } from '@angular/core';
-import { Dependency } from './dependency';
+import { DependencyInterface } from './dependency.interface';
+import { Dependency } from './dependency.service';
 
 @Component({
   selector: 'app-dependency',
@@ -8,10 +9,10 @@ import { Dependency } from './dependency';
 })
 export class DependencyComponent implements OnInit {
 
-  private dependency : Dependency;
-  private info : String;
+  private dependency : DependencyInterface;
+  private listDependency : Dependency;
 
-  constructor(@Inject('Dependency') dependency: Dependency) {
+  constructor(@Inject('DependencyInterface') dependency: DependencyInterface) {
     this.dependency = dependency;
   }
 
@@ -23,7 +24,7 @@ export class DependencyComponent implements OnInit {
   	this.dependency.getDependencys().subscribe(
       data => {
           console.info(data);
-         this.info = data;
+         this.listDependency = data;
       }, 
       err => {  
       }

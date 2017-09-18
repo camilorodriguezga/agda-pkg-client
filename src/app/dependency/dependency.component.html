@@ -2,5 +2,9 @@
   dependency works!
 </p>
 <p>
-{{info}}
+{{listDependency}}
 </p>
+
+<div *ngFor='let value of listDependency; trackBy: index;'>
+  {{ value }}
+</div>
