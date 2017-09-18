@@ -8,7 +8,7 @@ Requirements
 
 Install
 -------
-* Angular Client: npm install -g @angular/cli
+* Angular Client `npm install -g @angular/cli`
 
 Build
 -----

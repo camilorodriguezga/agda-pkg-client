@@ -23,7 +23,7 @@ export class DependencyComponent implements OnInit {
   	this.dependency.getDependencys().subscribe(
       data => {
           console.info(data);
-         this.info = data.info.contact.email;
+         this.info = data;
       }, 
       err => {  
       }
