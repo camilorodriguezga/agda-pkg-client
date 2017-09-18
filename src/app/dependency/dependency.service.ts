@@ -4,8 +4,8 @@ import { Observable } from 'rxjs/Observable';
 import { Dependency } from './Dependency';
 import 'rxjs/Rx';
 
-const BASE_URL = 'http://13.59.101.187:5000/api/';
-//const BASE_URL = 'http://127.0.0.1:5000/api/';
+// const BASE_URL = 'http://13.59.101.187:5000/api/';
+const BASE_URL = 'http://127.0.0.1:5000/api/';
 
 @Injectable()
 export class DependencyService implements Dependency {
