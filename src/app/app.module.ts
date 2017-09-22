@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatCardModule } from '@angular/material';
 
 import { HttpModule } from '@angular/http';
 
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    HttpModule
+    HttpModule,
+    MatCardModule
   ],
   providers: [ { provide: 'DependencyInterface', useClass: DependencyService}],
   bootstrap: [AppComponent]
