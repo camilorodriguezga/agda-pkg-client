@@ -1,12 +1,95 @@
-.card-dependency {
-  width: 400px;
-  background-color: #eee;
+.card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px -2px;
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 100;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 10px !important;
+  width: 300px;
 }
 
-.card-title {
-  font-weight: bold;
+.card ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: row;
+      -ms-flex: row wrap;
+          flex: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 0;
 }
 
-.card-header {
+.card-title li:first-child {
+  margin-right: auto;
+}
 
+.card li + li {
+  margin-left: .5rem;
+}
+
+.card li {
+  color: #999999;
+  font-size: .75rem;
+  height: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  white-space: nowrap;
+}
+
+.published-date {
+  border: 1px solid #999999;
+  border-radius: 3px;
+  padding: 0 .5rem;
+}
+
+.comments {
+  margin-right: 1rem;
+}
+
+.numero {
+  position: relative;
+}
+
+
+.card-foo ul {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.card-foo li:first-child {
+  
+}
+
+.card-foo li a {
+  color: #999999;
+}
+.card-foo {
+  border-top: 1px solid #e6e6e6;
+  margin: 0 auto;
+}
+
+.icon-fork,
+.icon-git,
+.icon-star,
+.icon-bubble {
+  fill: #999999;
+  height: 24px;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
+  width: 24px;
+}
+.icon-fork:hover,
+.icon-git:hover,
+.icon-star:hover,
+.icon-bubble:hover {
+  fill: #ff4d4d;
 }
