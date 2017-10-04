@@ -9,6 +9,7 @@
   margin-top: 20px;
   padding: 10px !important;
   width: 300px;
+  float: left;
 }
 
 .card ul {
