@@ -26,10 +26,17 @@ export class DependencyService implements DependencyInterface {
 	   	return this.http.get(BASE_URL)
 			.map(response => response.json())
 			.catch(error => this.handleError(error));
-		}
+	}
 
-		private handleError(error: any) {
+	public getSearchDependencys() : Observable<any>{
+	   	return this.http.get(BASE_URL)
+			.map(response => response.json())
+			.catch(error => this.handleError(error));
+	}
+
+	private handleError(error: any) {
 		console.error(error);
 		return Observable.throw("Server error (" + error.status + "): " + error.text())
 	}
+
 }
