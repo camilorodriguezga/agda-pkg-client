@@ -11,15 +11,17 @@ import { Dependency } from '../dependency/dependency.service';
 export class AppHeader {
   texto = 'header';
   private dependency : DependencyInterface;
+  private search = "";
 
   constructor(@Inject('DependencyInterface') dependency: DependencyInterface) {
     this.dependency = dependency;
   }
 
   getSearchDependency() {
-  	this.dependency.getSearchDependencys().subscribe(
+  	this.dependency.getSearchDependencys(this.search).subscribe(
       data => {
-          console.info(data);
+      		console.info(this.search);
+          	console.info(data);
       }, 
       err => {  
       }

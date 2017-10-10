@@ -1,7 +1,7 @@
 <nav class="navbar">
 	<a class="navbar-brand" href="#">Package Control</a>
 	<form class="form-inline">
-		<input class="custom-search form-control mr-sm-2" type="text" placeholder="Search">
-		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		<input [(ngModel)]="search" name="search" class="custom-search form-control mr-sm-2" type="text" placeholder="Search">{{myModel}}
+		<button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="getSearchDependency()">Search</button>
 	</form>
 </nav>

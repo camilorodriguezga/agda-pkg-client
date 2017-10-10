@@ -5,7 +5,7 @@ import { DependencyInterface } from './dependency.interface';
 import 'rxjs/Rx';
 
 //const BASE_URL = 'http://13.59.101.187:5000/api/';
-const BASE_URL = 'http://localhost:5000/api/list/library';
+const BASE_URL = 'http://localhost:5000/api';
 
 export class Dependency {
   constructor(
@@ -23,13 +23,13 @@ export class DependencyService implements DependencyInterface {
   	constructor(private http: Http) {}
 
 	public getDependencys() : Observable<any>{
-	   	return this.http.get(BASE_URL)
+	   	return this.http.get(BASE_URL+"/list/library")
 			.map(response => response.json())
 			.catch(error => this.handleError(error));
 	}
 
-	public getSearchDependencys() : Observable<any>{
-	   	return this.http.get(BASE_URL)
+	public getSearchDependencys(param: String) : Observable<any>{
+	   	return this.http.get(BASE_URL+"/search/{"+param+"}")
 			.map(response => response.json())
 			.catch(error => this.handleError(error));
 	}

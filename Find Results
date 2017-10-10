@@ -1,0 +1,18 @@
+Searching 46 files for "'http://"
+
+/Users/Minerva/Desktop/agda-pkg-client/protractor.conf.js:
+   13    },
+   14    directConnect: true,
+   15:   baseUrl: 'http://0.0.0.0:4200/',
+   16    framework: 'jasmine',
+   17    jasmineNodeOpts: {
+
+/Users/Minerva/Desktop/agda-pkg-client/src/app/dependency/dependency.service.ts:
+    5  import 'rxjs/Rx';
+    6  
+    7: //const BASE_URL = 'http://13.59.101.187:5000/api/';
+    8: const BASE_URL = 'http://localhost:5000/api/list/library';
+    9  
+   10  export class Dependency {
+
+3 matches across 2 files
